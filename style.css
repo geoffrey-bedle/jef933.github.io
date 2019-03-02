@@ -1,60 +1,102 @@
 @font-face {
     font-family: 'tngan';
     src: url('Police/tngan/tngan.ttf') format('truetype'),
-         url('Police/tngan/tnganb.tff') format('truetype'),
-         url('Police/tngan/tnganbi.ttf') format('truetype'),
-         url('Police/tngan/tngani.tff') format('truetype');      
+        url('Police/tngan/tnganb.tff') format('truetype'),
+        url('Police/tngan/tnganbi.ttf') format('truetype'),
+        url('Police/tngan/tngani.tff') format('truetype');
 }
+
 @font-face {
     font-family: 'anicb';
     src: url('Police/anicb/anicb___.ttf') format('truetype'),
-         url('Police/anicb/anicm___.tff') format('truetype'),
-         url('Police/anicb/anirb___.ttf') format('truetype'),
-         url('Police/anicb/anirm___.tff') format('truetype');
+        url('Police/anicb/anicm___.tff') format('truetype'),
+        url('Police/anicb/anirb___.ttf') format('truetype'),
+        url('Police/anicb/anirm___.tff') format('truetype');
 }
+
 @font-face {
     font-family: 'partybusiness';
     src: url('Police/partybusiness/partybusiness.ttf') format('truetype');
-         
+
 }
 
 /*Header-----------------------------------------------------------------------------------------------------------------------*/
 
-body{
+body {
     font-family: 'partybusiness';
 }
 
 .line {
     display: flex;
     justify-content: center;
-    align-items: baseline;
-  
-    margin-top: 20px;
+    align-items: center;
+    
+    font-size: 25px;
+
 }
-.line h2{
-    font-size:larger;
+
+.linetype{
+    display:flex;
+    align-items: center;
+    padding-top: 40px;
+}
+.linetype h5{
+    font-family: 'anicb';
+    padding-bottom: 25px;
+    
+}
+
+.ctext{
+    margin-bottom: 6%;
+   
+}
+
+.ctext p{
+    font-size: 1.6em;
+}
+.line h2 {
+    font-size: larger;
+    margin: 0;
+    margin-left: 20px;
+}
+span.symbole{
+    padding-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.symbole {
+    color: #fe6804;
+    font-family: 'tngan';
+    padding-bottom: 8px;
+
 }
 
 .line p {
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 0;
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
 }
-.navbar{
+
+.navbar {
     background-color: #fe6804;
     font-size: 0.8em;
     font-family: 'anicb';
     padding: 0;
     padding-left: 15px;
 }
+
 /* Carroussel ---------------------------------------------------------------------------------------------------------------*/
 
-.card-body p{
+.card-body p {
     margin-bottom: 20%;
     font-size: 1.5em;
-    
+
 }
 
 
@@ -67,12 +109,14 @@ header nav{
     text-align: center;
     width: 90%;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, .8);  
+    background-color: rgba(255, 255, 255, .8);
 }
-.button h1{
+
+.button h1 {
     font-size: 1.7em;
-    
+
 }
+
 .button span {
     color: #fe6804;
 }
@@ -84,16 +128,20 @@ header nav{
     text-align: center;
     width: 90%;
 }
-.button1 h1{
-    color:#fe6804;
+
+.button1 h1 {
+    color: #fe6804;
 }
 
 .top-card img {
-    opacity: .8;
+
+   opacity:.5;
+
 }
 
 .top-card:hover img {
     opacity: 1;
+
 }
 
 .caption {
@@ -102,7 +150,11 @@ header nav{
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 50px;
+}
+
+.barre {
+    text-decoration: line-through #fe6804;
 }
 
 .top-card:hover h1 {
@@ -122,60 +174,141 @@ header nav{
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
-
-
-
     margin-top: 30px;
 }
 
 .fellows img {
     height: 350px;
-    
+
 
 }
 
 .card {
     position: relative;
-    border:4px solid black;
+    border: 6px solid black;
     border-radius: 0;
-    
+
 }
-.card-body{
+
+#pills-tab {
+    margin-top: 10px;
+}
+
+#pills-tab a {
+    color: #4e4e4e;
+    font-size: 1em;
+    font-family: 'anicb'
+}
+#pills-tab a:hover{
+    color:#fe6804;
+    text-decoration: underline;
+}
+
+
+.card-body {
     background-color: black;
     color: white;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-div.card {
-    margin-top: 20px;
+
+.bloc2{
+    background-image: url(img/bg_light.png);
+}
+
+.gollum p {
+    
+    width: 70%;
+    margin-left: 10%;
+    
+
+}
+
+.gollum{
+    background-image: url(img/bg_dark.png);
+    color: white;
+}
+.gollum img{
+    width: 10%;
+    
+}
+.gollum h5{
+    text-align: center;
+    
+    width: 90%;
 }
 
 
-.gollum button{
-    margin-left: 50%;
-    border-radius: 5px;
-    height: 70px;
-}
-
-.hunters{
-    display:flex;
+.hunters {
+    display: flex;
     justify-content: space-around;
     flex-flow: wrap;
-    
-    
+    padding-bottom:  50px;
+
+
 }
-td,th{
-    border: 1px solid black;
-    
+.hunters h5{
+    color:#fe6804;
+font-size:2em;
+    margin-bottom:0;
 }
-th{
-    background-color:#9e9e9e;
+.hunters p,a{
+    color:black;
+    font-size: 1.1em;
 }
-table{
-    
-    width: 100%;
-   
-}
-.ring img{
-    float: right;
+.hunters a:hover{
+    color:black;
+    font-weight: bold;
 }
 
+.hunters button{
+    color:#fe6804;
+    background-color: black;
+    width: 100px;
+    border-radius: 5px;
+}
+td,
+th {
+    border: 1px solid black;
+
+}
+
+th {
+    background-color: #9e9e9e;
+}
+
+table {
+
+    width: 100%;
+
+}
+
+
+
+.bloc1{
+    background-image:url(img/bg_light.png);
+    padding-top:20px;
+    padding-bottom: 60px;
+}
+
+
+.captured{
+    display: flex;
+}
+
+.gollum button{
+    color:#fe6804;
+    background-color: white;
+    width: 15%;
+    margin-left: 40%;
+    font-size: 1.5em;
+    font-weight: bold;
+        border-radius: 5px;
+    height: 50px;
+   margin-bottom: 30px;
+}
+
+.carousel img{
+ max-height: 350px;
+}
