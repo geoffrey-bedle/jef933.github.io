@@ -299,6 +299,11 @@ font-size:2em;
     width: 100px;
     border-radius: 5px;
 }
+
+.hunters button img{
+    width: 30px;
+    height: 20px;
+}
 td,
 th {
     border: 1px solid black;
