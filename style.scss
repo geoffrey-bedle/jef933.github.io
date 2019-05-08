@@ -1,0 +1,56 @@
+@mixin ring($size,$color){
+  width:$size;
+  height:$size;
+  background-color:rgba(0,0,0,0);
+  border:$size/11 solid $color;
+  border-radius:50%;
+  box-shadow: $size/50 $size/50 $size/50 darken($color, 10%), inset $size/50 $size/50 $size/50 darken($color, 10%);
+}
+
+.ring{
+  @include ring(150px,#fcca02)
+}
+
+.rings{
+  @include ring(50px,#fe7113);
+  margin-bottom:50px;
+}
+
+.part-one{
+  display:flex;
+  margin-top:50px;
+  justify-content:center;
+  margin-bottom:80px;
+  h2{
+    margin-left:30px;
+    margin-right:30px;
+
+  }
+}
+
+.part-two{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:100px;
+  h2{
+    margin-left:30px;
+  }
+}
+
+@for $loop from 1 through 6 {
+  .ring-chained#{$loop} {
+    margin-left: $loop * -10px;
+    @include ring($loop/1.7*40px,#373737);
+  }
+}
+.part-three{
+  display:flex;
+  align-items:center;
+  margin-left:150px;
+}
+section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
